@@ -3,6 +3,7 @@ import React, { useState, useContext } from 'react';
 import { TodoContext } from './contexts/TodoContext';
 
 function TodoItem({ todo }) {
+  // Use useContext to get the functions from the context
   const { deleteTodo, toggleTodo, editTodo } = useContext(TodoContext);
   const [isEditing, setIsEditing] = useState(false);
   const [newText, setNewText] = useState(todo.text);

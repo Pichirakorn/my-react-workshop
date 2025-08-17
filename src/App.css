@@ -111,6 +111,11 @@ h1 {
   cursor: pointer;
 }
 
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
 .todo-item:last-child {
   border-bottom: none;
 }
@@ -129,20 +134,6 @@ h1 {
   background: #e60000;
 }
 
-/* src/App.css */
-
-/* ... (โค้ดเดิม) ... */
-
-
-
-/* 🔽 เพิ่ม rule นี้ */
-.todo-item.completed span {
-  text-decoration: line-through;
-  color: #999;
-}
-
-/* src/App.css */
-/* ... */
 .todo-item .edit-btn, .todo-item .save-btn {
   background-color: #f0ad4e;
   margin-right: 8px;
